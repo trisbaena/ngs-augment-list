@@ -14,7 +14,7 @@ export default function Footer() {
     >
        <a href="https://discord.gg/Qspvfk7dPQ" target="_blank" rel="noreferrer" className="underline">
           インフィニタム SHIP 4 JP</a> 
-          <a> dev: varrelend</a>
+
     </footer>
   )
 }
