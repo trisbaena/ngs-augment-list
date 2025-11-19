@@ -5,8 +5,9 @@ import Footer from './components/Footer'
 import CardItem from './components/CardItem'
 import Toast from './components/Toast'
 import SplashScreen from "./components/SplashScreen";
+import ExAugments from "./pages/ExAugments";
 
-import { radiData, raazaData, metaData } from './data'
+import { radiData, raazaData, metaData,exData } from './data'
 
 
 function ListPage({ title, data, onCopy }) {
@@ -89,7 +90,7 @@ export default function App() {
         <Route path="/radi" element={<ListPage title="Radi Augments" data={radiData} onCopy={handleCopy} />} />
         <Route path="/raaza" element={<ListPage title="Raaza Augments" data={raazaData} onCopy={handleCopy} />} />
         <Route path="/meta" element={<ListPage title="Meta Augments" data={metaData} onCopy={handleCopy} />} />
-
+        <Route path="/ex-augments" element={<ExAugments onCopy={handleCopy} />} />
       </Routes>
 
       <Footer />

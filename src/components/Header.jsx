@@ -32,6 +32,7 @@ export default function Header() {
         <Link to="/radi" className="px-3 py-1 rounded-md text-sm hover:bg-white/6">Radi</Link>
         <Link to="/raaza" className="px-3 py-1 rounded-md text-sm hover:bg-white/6">Raaza</Link>
         <Link to="/meta" className="px-3 py-1 rounded-md text-sm hover:bg-white/6">Meta</Link>
+        <Link to="/ex-augments" className="px-3 py-1 rounded-md text-sm hover:bg-white/6">Ex Augments</Link>
       </nav>
     </header>
   )
