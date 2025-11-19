@@ -8,7 +8,8 @@ function Meta({ onCopy }) {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {metaData.map((item, idx) => (
-          <CardItem key={idx} item={item} onCopy={onCopy} />
+          <CardItem item={item} onCopy={() => onCopy(item.jp)} />
+
         ))}
       </div>
     </main>

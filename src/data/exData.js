@@ -1,67 +1,233 @@
 export const exData = [
-  { en: "EX Dazzle Camouflage", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Threat level reduction even if you attack" },
-
-  { en: "EX Endure Pain PB Boost", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Photon Blast Gauge +2% on HP Decrease (10 second cooldown)" },
-
-  { en: "EX Enemy Down PP Gain", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Max 50% PP recovery when you down nearby enemies." },
-
-  { en: "EX Enemy Felled PP Gain", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "PP +6 when you defeat nearby enemies" },
-
-  { en: "EX Fortitude", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "When PP falls below 10%, Recover 200 PP (180 sec. cooldown). Effect starts 10 sec. after equipped." },
-
-  { en: "EX Fortune Signe", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "20% chance that Restasigne or Reversasigne won't be consumed when used Effect starts 10 sec. after equipped." },
-
-  { en: "EX Gradual PP Gain", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Recover 10 PP every 5 secs." },
-
-  { en: "EX Gradual Pressing", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Increase Down Factor to enemies by 5% every 10 seconds Max 20% increase." },
-
-  { en: "EX Heavy Attack Protect", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Damage Resistance +15% against boss enemies." },
-
-  { en: "EX Hysterical Strength", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "During Ailment Potency +2% Offensive PP Recovery +10% Damage Resistance +10%." },
-
-  { en: "EX Just Frame Counter", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Sidestep Counter occurs when you perform a normal attack after you break-fall a launcher or knockback" },
-
-  { en: "EX Light Attack Protect", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Damage Resistance +30% against non-boss enemies." },
-
-  { en: "EX Lively HP Starling", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "When HP at 95% or greater: Potency +1.5%, Damage Resistance +5%" },
-
-  { en: "EX Patient Defense", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Damage Resistance +15% on HP Decrease, up to +25% max / Bonus resets if no damage taken after 30 seconds." },
-
-  { en: "EX Risky Stance", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "30% chance to recover 10 PP when hit by attack, 5 secs cooldown/10% chance of 1 damage to yourself, 10 secs cooldown" },
-
-  { en: "EX Shortage HP Starling", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "When HP at 50% or lower: Potency +1.5%, Damage Resistance +30%." },
-
-  { en: "EX Shortage PP Burn Up", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Burn occurs when 100 PP consumed, During Burn Natural PP Recovery Speed +30%. Burn Potency Decrease nullified" },
-
-  { en: "EX Signe Shielding", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Damage Resistance +30% once per use of Restasigne or Reversasigne. Can use Restasign even with max HP." },
-
-  { en: "EX Stealth Wall", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Damage Resistance +10% against enemies targeting you/Potency +1.5% against enemies not targeting you." },
-
-  { en: "EX Tech Arts PP Suppress", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "PP Consumption -25% when using a different PA or Technique" },
-
-  { en: "EX Tough Mind", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "An incapacitating attack will leave you with 1 HP and temporary invulnerability (300 sec. cooldown) Effect starts 10 sec. after equipped." },
-
-  { en: "EX Tri-Shield", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Generate 3 shields that negates enemy damage (120 sec. cooldown after all shields are lost)." },
-
-  { en: "EX Evade HP Gain", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Recover 1% of Max HP when you successfully negate an attack with Sidestep or a Weapon Action (10 sec cooldown)" },
-
-  { en: "EX Maintain Balance", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Take 10% of your Max HP as damage when you land an attack while your HP is at 50% or higher (0.1 sec cooldown)/Recover 1% of your Max HP when you land an attack while HP at 48% or lower (0.5 sec cooldown)" },
-
-  { en: "EX Turnover", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "HP Recovery +10%/Potency +1.5% for 20 seconds when you recover HP" },
-
-  { en: "EX Bring Down PB Boost", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Potency vs. downed enemies +2% (Starts 10 sec after equipped) PB Gauge fills 6% when you down nearby enemies (10 sec cooldown, Starts 10 sec after equipped)" },
-
-  { en: "EX Shortage PP Preservation", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "PP Consumption -20% for 20 secs when PP is at 50% or lower (10 secs cooldown)" },
-
-  { en: "EX Consume PP Onslaught", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "PP Consumption +20% Potency +1% when PP is at 50% or lower" },
-
-  { en: "EX Critical Follow", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Additional attack on normal attack, additional attack treated as normal attack, definite Critical Hit (1 sec cooldown)" },
-
-  { en: "EX Critical Enliven", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Potency +1% for 30 secs upon a Critical Hit with a normal attack This effect does not stack" },
-
-  { en: "EX Tri-Shield Follow", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "HP Recovery +10% Damage Resistance +5% Shorten EX Tri-Shield cooldown by 90 secs" },
-
-  { en: "EX Evade Onslaught", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Potency +1% up to +3% when you successfully negate an attack with Sidestep or a Weapon action Boost lost on taking damage" },
-
-  { en: "EX Pain Provoke", desc1: "Potency +5.5%", desc2: "Potency Floor Increase +2%", desc3: "Potency +1.5% for 20 seconds when you take 9% of your Max HP in damage Recover 10% of Max HP when the effect ends" }
+  {
+    en: "EX Dazzle Camouflage",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Reduces rate that enemies target you when hitting them",
+    desc4: ""
+  },
+  {
+    en: "EX Endure Pain PB Boost",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "HP+25 Upon losing HP: PB Gauge fills by 2%. (10 second cooldown)",
+    desc4: ""
+  },
+  {
+    en: "EX Enemy Down PP Gain",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Max 50% PP recovery when you down nearby enemies.",
+    desc4: ""
+  },
+  {
+    en: "EX Enemy Felled PP Gain",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "PP +6 when you defeat nearby enemies",
+    desc4: ""
+  },
+  {
+    en: "EX Fortitude",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "When PP falls below 10%, Recover 200 PP (180 sec. cooldown). Effect starts 10 sec. after equipped.",
+    desc4: ""
+  },
+  {
+    en: "EX Fortune Sign",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "20% chance that Resta sign or Reversa sign won't be consumed when used Effect starts 10 sec. after equipped.",
+    desc4: ""
+  },
+  {
+    en: "EX Gradually PP Gain",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Recover 10 PP every 5 secs.",
+    desc4: ""
+  },
+  {
+    en: "EX Gradually Pressing",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Boost rate of down you inflict on enemies by 5% every 10 seconds Up to 20% Maximum.",
+    desc4: ""
+  },
+  {
+    en: "EX Heavy Attack Protect",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Damage Resist +15% against boss enemies.",
+    desc4: ""
+  },
+  {
+    en: "EX Hysterical Strength",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "While Afflicted by Status Damage +2% Attack PP Recovery +10% Damage Resist +10%.",
+    desc4: ""
+  },
+  {
+    en: "EX Just Frame Counter",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Sidestep Counter occurs when you perform a normal attack after you break-fall a launcher or knockback",
+    desc4: ""
+  },
+  {
+    en: "EX Light Attack Protect",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Damage Resist +30% against non-boss enemies.",
+    desc4: ""
+  },
+  {
+    en: "EX Lively HP Starling",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "When HP Above 95% : Damage +1.5%, Damage Resist +5%",
+    desc4: ""
+  },
+  {
+    en: "EX Patient Defense",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Damage Resist +15% on HP Decrease, up to +25% maximum / Bonus resets if no damage taken after 30 seconds.",
+    desc4: ""
+  },
+  {
+    en: "EX Risky Stance",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "30% chance to recover 10 PP when hit by attack, 5 secs cooldown/10% chance of 1 damage to yourself, 10 secs cooldown",
+    desc4: ""
+  },
+  {
+    en: "EX Shortage HP Starling",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "When HP at 50% or less : Damage +1.5%, Damage Resist +30%.",
+    desc4: ""
+  },
+  {
+    en: "EX Shortage PP Burn Up",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Burn occurs when 100 PP consumed, During Burn Natural PP Recovery Speed +30%. Burn no longer reduced Damage",
+    desc4: ""
+  },
+  {
+    en: "EX Sign Shielding",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Damage Resist +30% once per use of Resta sign or Reversa sign. Can use Resta sign even with max HP.",
+    desc4: ""
+  },
+  {
+    en: "EX Stealth Wall",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Damage Resist +10% against enemies targeting you/damage +1.5% against enemies not targeting you.",
+    desc4: ""
+  },
+  {
+    en: "EX Tech Arts PP Suppress",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "PP Consumption -25% when using a different PA or Technique",
+    desc4: ""
+  },
+  {
+    en: "EX Tough Mind",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "PP +3 Upon taking lethal damage: Survive with 1 HP, gain temp invincibility. (300 second cooldown) (Begins 10 seconds after equip)",
+    desc4: ""
+  },
+  {
+    en: "EX Tri-Shield",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Damage Resist+1% Generates 3 shields which block damage from enemies. When all shields are broken, they return after 120 seconds.",
+    desc4: ""
+  },
+  {
+    en: "EX Avoid HP Gain",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "PP +3 Successfully preventing damage with Step or a Weapon Action recovers 1% of maximum HP.(10 second cooldown)",
+    desc4: ""
+  },
+  {
+    en: "EX Keep Balance",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "HP+25 When your attack hits, If HP is above 50%: Damage self for 10% max HP (0.1 second cooldown) When your attack hits, If HP is below 48%: Recover 1% of max HP (0.5 second cooldown)",
+    desc4: ""
+  },
+  {
+    en: "EX Turnover",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "HP+25 HP Recovery+10% After recovering HP: Damage+1.5% for 20 seconds",
+    desc4: ""
+  },
+  {
+    en: "EX Bring Down PB Boost",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Damage Resist +1% Against Downed enemies: Damage +2% (Begins 10 seconds after equip) When nearby enemy is Downed: Increases PB Gauge by 6% (10 second cooldown) (Begins 10 seconds after equip)",
+    desc4: ""
+  },
+  {
+    en: "EX Shortage PP Save",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Down Resist+5% When PP is less than or equal to 50%: PP Consumption-20% for 20 seconds. Recast 10 seconds.",
+    desc4: ""
+  },
+  {
+    en: "EX Consume PP Onslaught",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Damage Resist+1% When PP is less than or equal to 50%: PP Consumption+20% Damage+1%",
+    desc4: ""
+  },
+  {
+    en: "EX Critical Follow",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Damage Resist +1% Launches a critical extra attack after executing a normal attack. This attack is considered a normal attack. Recast 1 second.",
+    desc4: ""
+  },
+  {
+    en: "EX Critical Enliven",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "When you perform a critical hit with a normal attack: For 30 seconds, Damage +1%. Effect does not overlap.",
+    desc4: ""
+  },
+  {
+    en: "EX Tri-Shield Follow",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "HP Recovery +10% Damage Resist +5% EX Tri-Shield recast reduced to 90 seconds.",
+    desc4: ""
+  },
+  {
+    en: "EX Avoid Onslaught",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Until you take damage: Gain a 1% damage bonus to a max of 3%, every time you evade taking damage via Step or Weapon Action.",
+    desc4: ""
+  },
+  {
+    en: "EX Pain Rouse",
+    desc1: "Damage +5.5%",
+    desc2: "Damage variance +2%",
+    desc3: "Damage Resist +1% Boosts damage by 1.5% for 20s when damage taken exceeds 9% of max HP. Recover 10% of max HP when effect ends.",
+    desc4: ""
+  }
 ];
