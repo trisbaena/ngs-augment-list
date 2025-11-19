@@ -1,17 +1,15 @@
-// src/pages/Ring.jsx
-
 import { ringData } from "../data/ringData";
 
 export default function Ring({ onCopy }) {
 
   const handleCopy = (item) => {
     const text = `${item.type}／${item.jpname}`;
-    onCopy(text);   // 🔥 ใช้ onCopy จาก App.jsx เท่านั้น
+    onCopy(text);   
   };
 
   return (
     <div className="text-white px-4 pb-20 pt-28">
-      <h1 className="text-center text-3xl font-bold mb-8">Ring Augments</h1>
+      <h1 className="text-center text-3xl font-bold mb-8">SKill Ring</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
         {ringData.map((item, index) => (

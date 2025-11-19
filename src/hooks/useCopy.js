@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 
-export default function useCopy(timeout = 1500) {
+export default function useCopy(timeout = 3000) {
   const [toastMessage, setToastMessage] = useState("");
 
   const copy = useCallback((text) => {
