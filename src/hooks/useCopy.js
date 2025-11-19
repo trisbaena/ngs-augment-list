@@ -6,7 +6,7 @@ export default function useCopy(timeout = 1500) {
   const copy = useCallback((text) => {
     try {
       navigator.clipboard.writeText(text);
-      setToastMessage("Copied!!");
+      setToastMessage(`${text} is Copied!!`);
       setTimeout(() => setToastMessage(""), timeout);
     } catch (e) {
       console.error("Copy failed", e);
