@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import logo from "/favicon.png"; // ใช้ไอคอนที่คุณอัปโหลด
+import logo from "/favicon.png"; 
 
 export default function SplashScreen() {
   const [fade, setFade] = useState(false);
   const [hide, setHide] = useState(false);
 
   useEffect(() => {
-    const t1 = setTimeout(() => setFade(true), 900);     // เริ่ม fade-out
-    const t2 = setTimeout(() => setHide(true), 1600);    // ซ่อน splash ออกไปเลย
+    const t1 = setTimeout(() => setFade(true), 900);     
+    const t2 = setTimeout(() => setHide(true), 1600);    
 
     return () => {
       clearTimeout(t1);
@@ -28,13 +28,13 @@ export default function SplashScreen() {
         overflow-hidden
       `}
     >
-      {/* เส้นเรืองแสง */}
+      {/* Line*/}
       <div className="absolute w-full h-full bg-[radial-gradient(circle_at_center,rgba(0,198,255,0.25),transparent_60%)]"></div>
 
-      {/* จุดดาว */}
+      {/* Background */}
       <div className="absolute w-full h-full bg-[url('https://cdn.discordapp.com/attachments/987802293707632650/1440400502994112612/581943481_122149469054844736_6193446809905280480_n.jpg?ex=691e0501&is=691cb381&hm=187e2525451cc2538901bd62e7e5df044911d39578bff00efd9db82515f8d7af')] opacity-40"></div>
 
-      {/* โลโก้ NGS */}
+      {/*  NGS Logo */}
       <img
         src={logo}
         alt="NGS Logo"
