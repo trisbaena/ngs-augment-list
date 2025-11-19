@@ -1,7 +1,5 @@
-import React from 'react'
-
-export default function Toast({ show, text }) {
-  if (!show) return null
+export default function Toast({ message }) {
+  if (!message) return null;
 
   return (
     <div className="fixed bottom-10 left-1/2 -translate-x-1/2 z-50">
@@ -14,8 +12,8 @@ export default function Toast({ show, text }) {
                11.293l6.293-6.293a1 1 0 011.414 0z"
             clipRule="evenodd" />
         </svg>
-        <span className="font-medium">{text}</span>
+        <span className="font-medium">{message}</span>
       </div>
     </div>
-  )
+  );
 }

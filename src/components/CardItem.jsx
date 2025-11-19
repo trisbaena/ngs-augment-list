@@ -7,7 +7,7 @@ function CardItem({ item, onCopy }) {
 
   return (
     <button
-      onClick={() => onCopy && onCopy(title + " ?")}
+      onClick={() => onCopy && onCopy(item)}
       className="text-left w-full h-full flex flex-col justify-start items-stretch p-4 rounded-lg bg-gray-800 hover:bg-gray-700 transition"
     >
       <div className="mb-2">

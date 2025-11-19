@@ -42,7 +42,7 @@ export default function ExAugments({ onCopy }) {
         {exData.map((item, idx) => (
           <button
             key={idx}
-            onClick={() => onCopy(item.en + " ?")}
+            onClick={() => onCopy(item.en + " II ?")}
             className="text-left w-full h-full flex flex-col justify-start p-4
                        rounded-lg bg-transparent hover:bg-white/5 transition
                        border border-white/5"
