@@ -6,6 +6,7 @@ import Toast from './components/Toast';
 import SplashScreen from './components/SplashScreen';
 import useCopy from './hooks/useCopy';
 import MainPage from './pages/MainPage';
+import Ring from "./pages/Ring";
 
 // lazy loaded pages
 const Radi = lazy(() => import('./pages/Radi'));
@@ -35,6 +36,8 @@ function App() {
           <Route path="/raaza" element={<Raaza onCopy={copy} />} />
           <Route path="/meta" element={<Meta onCopy={copy} />} />
           <Route path="/ex-augments" element={<ExAugments onCopy={copy} />} />
+          <Route path="/ring" element={<Ring onCopy={copy} />} />
+
         </Routes>
       </Suspense>
 

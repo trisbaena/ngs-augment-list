@@ -33,6 +33,8 @@ export default function Header() {
         <Link to="/raaza" className="px-3 py-1 rounded-md text-sm hover:bg-white/6">Raaza</Link>
         <Link to="/meta" className="px-3 py-1 rounded-md text-sm hover:bg-white/6">Meta</Link>
         <Link to="/ex-augments" className="px-3 py-1 rounded-md text-sm hover:bg-white/6">Ex Augments</Link>
+        <Link to="/ring" className="px-3 py-1 rounded-md text-sm hover:bg-white/6">Skill Ring</Link>
+
       </nav>
     </header>
   )
