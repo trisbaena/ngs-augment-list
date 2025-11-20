@@ -17,13 +17,9 @@ export default function Toast({ message }) {
         shadow-lg backdrop-blur-sm 
         flex items-center gap-2
       ">
-
-        {/* ชื่อเป็นสีเขียวเรืองแสง */}
         <span className="font-bold text-green-400 drop-shadow-[0_0_6px_rgba(0,255,100,0.9)]">
           {copiedText}
         </span>
-
-        {/* suffix สีปกติ */}
         <span>{suffix}</span>
 
       </div>

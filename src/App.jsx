@@ -27,7 +27,7 @@ function App() {
   if (loading) return <SplashScreen />;
 
   return (
-    <div className="min-h-screen bg-neutral-950 text-white">
+    <div className="min-h-screen bg-neutral-950 text-white pt-10 pb-10">
       <Header />
 
       <Suspense fallback={<div className="pt-24 p-6">Loading...</div>}>
