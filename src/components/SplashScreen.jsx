@@ -28,13 +28,10 @@ export default function SplashScreen() {
         overflow-hidden
       `}
     >
-      {/* Line*/}
       <div className="absolute w-full h-full bg-[radial-gradient(circle_at_center,rgba(0,198,255,0.25),transparent_60%)]"></div>
 
-      {/* Background */}
       <div className="absolute w-full h-full bg-[url('https://cdn.discordapp.com/attachments/987802293707632650/1440400502994112612/581943481_122149469054844736_6193446809905280480_n.jpg?ex=691e0501&is=691cb381&hm=187e2525451cc2538901bd62e7e5df044911d39578bff00efd9db82515f8d7af')] opacity-40"></div>
 
-      {/*  NGS Logo */}
       <img
         src={logo}
         alt="NGS Logo"

@@ -1,7 +1,7 @@
 import React from 'react';
 
 function CardItem({ item, onCopy }) {
-  // item expected: { jp, en, desc1, desc2, desc3, desc4 } or desc: []
+  
   const title = item.en || item.jp || "";
   const descs = item.desc || [item.desc1, item.desc2, item.desc3, item.desc4].filter(Boolean);
 
