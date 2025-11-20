@@ -8,11 +8,12 @@ import useCopy from './hooks/useCopy';
 import MainPage from './pages/MainPage';
 import Ring from "./pages/Ring";
 
-// lazy loaded pages
 const Radi = lazy(() => import('./pages/Radi'));
 const Raaza = lazy(() => import('./pages/Raaza'));
 const Meta = lazy(() => import('./pages/Meta'));
 const ExAugments = lazy(() => import('./pages/ExAugments'));
+import ToolSite from "./pages/toolsite";
+
 
 function App() {
   const { toastMessage, copy } = useCopy(1500);
@@ -37,6 +38,7 @@ function App() {
           <Route path="/meta" element={<Meta onCopy={copy} />} />
           <Route path="/ex-augments" element={<ExAugments onCopy={copy} />} />
           <Route path="/ring" element={<Ring onCopy={copy} />} />
+          <Route path="/toolsite" element={<ToolSite onCopy={copy} />} />
 
         </Routes>
       </Suspense>

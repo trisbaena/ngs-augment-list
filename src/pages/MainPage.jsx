@@ -24,11 +24,13 @@ export default function MainPage() {
         <Link to="/ring" className="p-4 bg-gray-800 rounded-xl text-center hover:bg-gray-700 transition">
           Skill Ring
         </Link>
+        <Link to="/toolsite" className="p-4 bg-gray-800 rounded-xl text-center hover:bg-gray-700 transition">
+          Toolsite and Important NGS Data
+        </Link>
       </div>
 
       <section className="w-full max-w-4xl mt-16 mb-20 px-4 flex flex-col items-center">
 
-        
         <div className="w-full bg-neutral-800/60 border border-neutral-700 rounded-xl p-5 shadow-md backdrop-blur-sm">
           <h2 className="text-xl font-bold mb-3 text-blue-300">📢 Announcements</h2>
           <ul className="list-disc list-inside text-neutral-300 leading-relaxed">
@@ -39,7 +41,6 @@ export default function MainPage() {
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 mt-12 text-center">
 
-          {/* DISCORD */}
           <a
             href="https://discord.gg/Qspvfk7dPQ"
             target="_blank"
@@ -52,7 +53,6 @@ export default function MainPage() {
             </span>
           </a>
 
-          {/* WEBSITE */}
           <a
             href="https://arks-layer.com/"
             target="_blank"
@@ -65,7 +65,6 @@ export default function MainPage() {
             </span>
           </a>
 
-          {/* FAN BLOG */}
           <a
             href="https://www.bumped.org/phantasy/category/scratch/"
             target="_blank"
@@ -78,7 +77,6 @@ export default function MainPage() {
             </span>
           </a>
 
-          {/* CONTACT DEV */}
           <a
             href="https://steamcommunity.com/id/IAMVarrel64BIT/"
             target="_blank"

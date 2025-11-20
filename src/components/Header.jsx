@@ -55,6 +55,10 @@ export default function Header() {
   <span className="opacity-40">|</span>
 
   <Link to="/ring" className="hover:text-blue-300">Skill Ring</Link>
+
+  <span className="opacity-40">|</span>
+<Link to="/toolsite" className="hover:text-blue-300">Toolsite</Link>
+
 </nav>
 
 
