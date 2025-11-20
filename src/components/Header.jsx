@@ -24,16 +24,39 @@ export default function Header() {
           </button>
         )}
         <Link to="/" className="text-xl font-semibold tracking-tight">
-          インフィニタム
+          
+<div className="flex items-center space-x-2">
+  <img
+    src="/inf.png"
+    alt="logo"
+    className="w-8 h-8 object-contain"
+  />
+  <span className="text-white font-bold tracking-wide">
+    インフィニタム SHIP 4 JP
+  </span>
+</div>
+
+
         </Link>
       </div>
 
       <nav className="flex gap-3">
-        <Link to="/radi" className="px-3 py-1 rounded-md text-sm hover:bg-white/6">Radi</Link>
-        <Link to="/raaza" className="px-3 py-1 rounded-md text-sm hover:bg-white/6">Raaza</Link>
-        <Link to="/meta" className="px-3 py-1 rounded-md text-sm hover:bg-white/6">Meta</Link>
-        <Link to="/ex-augments" className="px-3 py-1 rounded-md text-sm hover:bg-white/6">Ex Augments</Link>
-        <Link to="/ring" className="px-3 py-1 rounded-md text-sm hover:bg-white/6">Skill Ring</Link>
+        <nav className="flex items-center space-x-4 text-white">
+  <Link to="/radi" className="hover:text-blue-300">Radi</Link>
+  <span className="opacity-40">|</span>
+
+  <Link to="/raaza" className="hover:text-blue-300">Raaza</Link>
+  <span className="opacity-40">|</span>
+
+  <Link to="/meta" className="hover:text-blue-300">Meta</Link>
+  <span className="opacity-40">|</span>
+
+  <Link to="/ex-augments" className="hover:text-blue-300">Ex Augments</Link>
+  <span className="opacity-40">|</span>
+
+  <Link to="/ring" className="hover:text-blue-300">Skill Ring</Link>
+</nav>
+
 
       </nav>
     </header>
